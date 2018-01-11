@@ -31,7 +31,7 @@ class App extends Component {
         <Header />
 
         <section className="App__content">
-          <Summary count={ posts.count } />
+          <Summary count={ posts.length } />
           <Feed posts={ posts } />
         </section>
       </div>

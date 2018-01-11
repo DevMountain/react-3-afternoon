@@ -39,8 +39,8 @@ In this step, we'll import axios into the project and fetch all the DevMountain 
 * Import `axios` at the top.
 * Create a `componentDidMount` method that fetches all the posts using `axios`.
 * Use the result of the `axios` call to set a `posts` array on state.
-* Pass the posts array down as a `prop` into the `Feed` component.
-* Pass the posts array length down as a`prop` into the `Summary` component.
+* Pass the posts array down as a `prop` called `posts` into the `Feed` component.
+* Pass the posts array length down as a `prop` called `count` into the `Summary` component.
 
 <details>
 
@@ -97,7 +97,7 @@ render() {
       <Header />
 
       <section className="App__content">
-        <Summary count={ posts.count } />
+        <Summary count={ posts.length } />
         <Feed posts={ posts } />
       </section>
     </div>
@@ -147,7 +147,7 @@ class App extends Component {
         <Header />
 
         <section className="App__content">
-          <Summary count={ posts.count } />
+          <Summary count={ posts.length } />
           <Feed posts={ posts } />
         </section>
       </div>
@@ -159,6 +159,24 @@ export default App;
 ```
 
 </details>
+
+## Step 2
+
+### Summary
+
+In this step, we'll use the `props` passed into the `Summary` and `Feed` component and render them onto the `DOM`.
+
+### Instructions
+
+* Open `./src/components/Summary/Summary.js`.
+* Locate the `span` with the value of `###`.
+* Replace `###` with the value of `count` off of props.
+* Open `./src/components/Feed/Feed.js`.
+
+
+
+
+
 
 ## Step 2
 
