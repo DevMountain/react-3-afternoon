@@ -172,6 +172,9 @@ In this step, we'll use the `props` passed into the `Summary` and `Feed` compone
 * Locate the `span` with the value of `###`.
 * Replace `###` with the value of `count` off of props.
 * Open `./src/components/Feed/Feed.js`.
+* Map over the `posts` array off of props and render a `Post` component for each post.
+  * Add a `text`, `id`, and `date` on each `Post` component and set them equal to values for each post.
+  * Remember to use a `key` prop when mapping in React to avoid errors. The post ID will always be unique.
 
 <details>
 
