@@ -72,7 +72,7 @@ export default class Post extends Component {
           {
             editing
             ?
-              <Edit text="Merry Christmas from DevMountain Provo!"
+              <Edit text=""
                     cancelFn={ this.cancelEdit } />
             :
               <span className="Post__text">POST TEXT GOES HERE</span>
