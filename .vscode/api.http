@@ -1,0 +1,17 @@
+POST http://localhost:4000/api/posts
+content-type: application/json
+
+{
+  "text": "Test post yo"
+}
+
+GET http://localhost:4000/api/posts
+
+PUT http://localhost:4000/api/posts?id=0
+content-type: application/json
+
+{
+  "text": "sup"
+}
+
+DELETE http://localhost:4000/api/posts?id=3
