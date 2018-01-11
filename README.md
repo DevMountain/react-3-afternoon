@@ -334,7 +334,7 @@ render() {
         {
           editing
           ?
-            <Edit text="Merry Christmas from DevMountain Provo!"
+            <Edit text=""
                   cancelFn={ this.cancelEdit } />
           :
             <span className="Post__text">{ this.props.text }</span>
