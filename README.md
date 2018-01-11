@@ -6,9 +6,9 @@ In this project, we'll complete the functionality of a social media platform by 
 
 # Live Example
 
-<a href="https://devlemire.github.io/react-3-afternoon/">Click Me!</a>
+<a href="https://devmountain.github.io/react-3-afternoon/">Click Me!</a>
 
-<img src="https://github.com/devlemire/react-3-afternoon/blob/solution/assets/1.png" />
+<img src="https://github.com/devmountain/react-3-afternoon/blob/solution/assets/1.png" />
 
 ## Setup
 

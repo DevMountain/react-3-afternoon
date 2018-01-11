@@ -17,5 +17,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://devlemire.github.io/react-3-afternoon/"
+  "homepage": "https://devmountain.github.io/react-3-afternoon/"
 }
