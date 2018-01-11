@@ -86,7 +86,7 @@ constructor() {
 }
 ```
 
-Lastly, we'll just need to pass down the value of `posts` on state down into the children components that are depending on it. The `Summary` component depends on the length of `posts` to display it and the `Feed` component depends on `posts` to `map` over them and `render` them. Since I'll be referring to `this.state.posts` multiple times in my render method, I'll use `es6` destructuring on `state`.
+Lastly, we'll just need to pass down the value of `posts` on state down into the children components that are depending on it. The `Summary` component depends on the length of `posts` to display it and the `Feed` component depends on `posts` to `map` over them and `render` them. Since I'll be referring to `this.state.posts` multiple times in my render method, I'll use `es6 destructuring` on `state`.
 
 ```js
 render() {
