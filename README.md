@@ -48,13 +48,13 @@ In this step, we'll import axios into the project and fetch all the DevMountain 
 
 <br />
 
-Let's begin by importing `axios` into our project. In your command line, make sure you are in the root project directory, run `npm install --save axios`.
+Let's begin by importing `axios` into our project. In your command line, make sure you are in the root project directory, run `npm install --save axios`. Then open `./src/components/App.js` and at the top with the other imports, import axios.
 
 ```js
 import axios from 'axios';
 ```
 
-Now that we have `axios`, open `./src/components/App.js`. We are using this component to fetch the `posts` because it is the parent component to the `Summary` and `Feed` component. Both those components rely on the `posts` array. Let's create a `componentDidMount` method that uses `axios` to fetch our `posts`. Remember, when fetching data from a server always use a `GET` request. Using the API documentation we can see that the base API url is: `practiceapi.devmountain.com/api` and uses a `https` scheme. We can also see that all our post endpoints are under the `/posts` route.
+We are using this component to fetch the `posts` because it is the parent component to the `Summary` and `Feed` component. Both those components rely on the `posts` array. Let's create a `componentDidMount` method that uses `axios` to fetch our `posts`. Remember, when fetching data from a server always use a `GET` request. Using the API documentation we can see that the base API url is: `practiceapi.devmountain.com/api` and uses a `https` scheme. We can also see that all our post endpoints are under the `/posts` route.
 
 ```js
 componentDidMount() {
