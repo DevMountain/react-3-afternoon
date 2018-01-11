@@ -297,6 +297,8 @@ In this step, we'll go into the `Post` component and access props to render in t
 * Replace `DATE GOES HERE` with the value of `date` on props.
 * Replace `POST TEXT GOES HERE` with the value of `text` on props.
 
+### Solution
+
 <details>
 
 <summary> <code> ./src/components/Feed/Post/Post.js ( render method ) </code> </summary>
