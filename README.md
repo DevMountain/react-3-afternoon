@@ -111,6 +111,8 @@ render() {
 
 <summary> <code> ./src/components/App.js </code> </summary>
 
+<br />
+
 ```js
 import React, { Component } from 'react';
 import axios from 'axios';
