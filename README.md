@@ -188,7 +188,7 @@ Let's begin by opening `./src/components/Summary/Summary.js`. This is the compon
 <span className="Summary__posts-value">{ this.props.count }</span>
 ```
 
-We're done with that component now. Let's move on to the `Feed` component. This component sits on the right side of the `Summary` component. It displays a feed of `posts`. Let's map over the `posts` array that we are passing down through props and render a `Post` component for each `Post`. The `Post` component is a child component for the `Feed` component that handles displaying posts and also offering a way to edit and delete a post. When mapping, we need to pass props down into the `Post` component in order for the `Post` component to display the data. We'll need a `text`, `date`, `id`, and `key` prop.
+We're done with that component now. Let's move on to the `Feed` component. This component sits on the right side of the `Summary` component. It displays a feed of `posts`. Let's map over the `posts` array that we are passing down through props and render a `Post` component for each `post`. The `Post` component is a child component for the `Feed` component that handles displaying posts and also offering a way to edit and delete a `post`. When mapping, we need to pass props down into the `Post` component in order for the `Post` component to display the data. We'll need a `text`, `date`, `id`, and `key` prop.
 
 ```js
 {
@@ -201,7 +201,7 @@ We're done with that component now. Let's move on to the `Feed` component. This 
 }
 ```
 
-Now the `Post` component will be able to reference each individual's post's data by using `this.props.text`, `this.props.date`, and `this.props.id`.
+Now the `Post` component will be able to reference each individual post's data by using `this.props.text`, `this.props.date`, and `this.props.id`.
 
 </details>
 
