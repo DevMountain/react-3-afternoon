@@ -8,8 +8,17 @@ export default class Feed extends Component {
   render() {
     return (
       <section className="Feed__parent">
-      
+
         <Compose />
+        
+        {
+          this.props.posts.map( post => (
+            <Post key={ post.id }
+                  text={ post.text }
+                  date={ post.date }
+                  id={ post.id } />
+          ))
+        }
 
       </section>
     )
