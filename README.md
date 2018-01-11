@@ -182,7 +182,26 @@ In this step, we'll use the `props` passed into the `Summary` and `Feed` compone
 
 <br />
 
+Let's begin by opening `./src/components/Summary/Summary.js`. This is the component that sits on the left side of the posts feed ( `Feed` component ). It displays DevMountain's name, handle, and profile picture. Underneath those it is also displaying a post count which is currently equal to `###`. All we need to do is update that value to use the value we are passing down through props. 
 
+```js
+<span className="Summary__posts-value">{ this.props.count }</span>
+```
+
+We're done with that component now. Let's move on to the `Feed` component. This component sits on the right side of the `Summary` component. It displays a feed of `posts`. Let's map over the `posts` array that we are passing down through props and render a `Post` component for each `Post`. The `Post` component is a child component for the `Feed` component that handles displaying posts and also offering a way to edit and delete a post. When mapping, we need to pass props down into the `Post` component in order for the `Post` component to display the data. We'll need a `text`, `date`, `id`, and `key` prop.
+
+```js
+{
+  this.props.posts.map( post => (
+    <Post key={ post.id }
+          text={ post.text }
+          date={ post.date }
+          id={ post.id } />
+  ))
+}
+```
+
+Now the `Post` component will be able to reference each individual's post's data by using `this.props.text`, `this.props.date`, and `this.props.id`.
 
 </details>
 
