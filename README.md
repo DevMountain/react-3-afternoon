@@ -2,7 +2,9 @@
 
 # Project Summary
 
-In this project, we'll complete the functionality of a social media platform by using `axios` in a `react` project. Majority of the application has already been built out for you. Take some time before starting to familarize yourself with the component structure.
+In this project, we'll complete the functionality of a social media platform by using `axios` in a `react` project. Majority of the application has already been built out for you. Take some time before starting to familarize yourself with the component structure. The platform we'll be building out is a scaled down version of twitter and we'll focus on the functionality for fetching all the DevMountain posts, creating new posts, editing existing posts, and deleting existing posts.
+
+This is a live API, please be respectful and mindful of what you post.
 
 # Live Example
 
@@ -17,6 +19,40 @@ In this project, we'll complete the functionality of a social media platform by 
 * `cd` into the project directory.
 * Run `npm install`.
 * Run `npm start`.
+
+## API Documentation
+
+Before continuing to step 1, take a minute to browse the API documentation.
+
+SWAGGER LINK HERE
+
+## Step 1
+
+### Summary
+
+In this step, we'll import axios into the project and fetch all the DevMountain posts.
+
+## Step 2
+
+### Summary
+
+In this step, we'll get the `Compose` button to create new DevMountain posts.
+
+## Step 3
+
+### Summary
+
+In this step, we'll get the `Edit` button to edit existing DevMountain posts.
+
+## Step 4
+
+### Summary
+
+In this step, we'll get the `Delete` button to delete existing DevMountain posts.
+
+## Black Diamond
+
+Search functionality..
 
 ## Contributions
 
