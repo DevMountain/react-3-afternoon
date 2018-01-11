@@ -46,6 +46,8 @@ In this step, we'll import axios into the project and fetch all the DevMountain 
 
 <summary> Detailed Instructions </summary>
 
+<br />
+
 Let's begin by importing `axios` into our project. In your command line, make sure you are in the root project directory, run `npm install --save axios`.
 
 ```js
@@ -110,8 +112,6 @@ render() {
 <details>
 
 <summary> <code> ./src/components/App.js </code> </summary>
-
-
 
 ```js
 import React, { Component } from 'react';
