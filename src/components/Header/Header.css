@@ -1,0 +1,48 @@
+.Header__parent {
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+  background-color: #FFF;
+}
+
+.Header__content {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+.Header__company-info {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#Header__company-icon {
+  font-size: 35px;
+  color: #2aabe2;
+  margin-right: 5px;
+}
+
+.Header__profile {
+  border: 1px solid #2aabe2;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin: 0px 10px;
+}
+
+.Header__right {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
