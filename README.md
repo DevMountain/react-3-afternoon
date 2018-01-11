@@ -173,7 +173,7 @@ In this step, we'll use the `props` passed into the `Summary` and `Feed` compone
 * Replace `###` with the value of `count` off of props.
 * Open `./src/components/Feed/Feed.js`.
 * Map over the `posts` array off of props and render a `Post` component for each post.
-  * Add a `text`, `id`, and `date` on each `Post` component and set them equal to values for each post.
+  * Add a `text`, `id`, and `date` prop on each `Post` component and set them equal to values for each post.
   * Remember to use a `key` prop when mapping in React to avoid errors. The post ID will always be unique.
 
 <details>
@@ -263,6 +263,8 @@ export default class Feed extends Component {
 ```
 
 </details>
+
+<img src="https://github.com/DevMountain/react-3-afternoon/blob/solution/assets/2.png" />
 
 ## Step 2
 
