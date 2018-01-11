@@ -285,6 +285,23 @@ export default class Feed extends Component {
 
 <img src="https://github.com/DevMountain/react-3-afternoon/blob/solution/assets/2.png" />
 
+## Step 3
+
+### Summary
+
+In this step, we'll go into the `Post` component and access props to render in the data for each `post`.
+
+### Instructions
+
+* Open `./src/components/Feed/Post/Post.js`.
+* Replace `DATE GOES HERE` with the value of `date` on props.
+* Replace `POST TEXT GOES HERE` with the value of `text` on props.
+
+
+
+
+
+
 ## Step 2
 
 ### Summary

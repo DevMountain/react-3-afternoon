@@ -65,7 +65,7 @@ export default class Post extends Component {
           <span className="Post__name">DevMountain</span>
           <span className="Post__handle">@DevMountain</span>
 
-          <span className="Post__date">- DATE GOES HERE</span>
+          <span className="Post__date">- { this.props.date }</span>
         </div>
 
         <div className="Post__content">
@@ -75,7 +75,7 @@ export default class Post extends Component {
               <Edit text="Merry Christmas from DevMountain Provo!"
                     cancelFn={ this.cancelEdit } />
             :
-              <span className="Post__text">POST TEXT GOES HERE</span>
+              <span className="Post__text">{ this.props.text }</span>
           }
         </div>
 
