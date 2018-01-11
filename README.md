@@ -24,7 +24,7 @@ This is a live API, please be respectful and mindful of what you post.
 
 Before continuing to step 1, take a minute to browse the API documentation.
 
-SWAGGER LINK HERE
+https://swaggerhub.com/apis/DevMountain/social_mountain/1.0.0
 
 ## Step 1
 
