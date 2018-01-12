@@ -360,10 +360,12 @@ render() {
 
 ### Summary
 
-In this step, we'll get the `Edit` button to work for existing `posts`. The edit button is under the hidden menu on the top-right of a `post`.
+In this step, we'll get the `Edit` button to work for existing `posts`. The edit button is under the hidden menu on the top-right of a `post`. Since the `App.js` maintains the `posts` array, we'll need to create a method in this component that uses `axios` to update `post` and then uses the results to update the `posts` array on state.
 
 ### Instructions
 
+* Open `./src/components/App.js`.
+* Create a new method called `updatePost` that has an `id` and `text` parameter.
 * Open `./src/components/Feed/Post/Post.js`.
 * Locate where the `Edit` component is being rendered.
 * Update the `text` prop to be the `post`'s text.
