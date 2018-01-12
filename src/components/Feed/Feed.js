@@ -9,7 +9,7 @@ export default class Feed extends Component {
     return (
       <section className="Feed__parent">
 
-        <Compose />
+        <Compose createPostFn={ this.props.createPostFn } />
         
         {
           this.props.posts.map( post => (
@@ -17,7 +17,8 @@ export default class Feed extends Component {
                   text={ post.text }
                   date={ post.date }
                   id={ post.id }
-                  updatePostFn={ this.props.updatePostFn } />
+                  updatePostFn={ this.props.updatePostFn }
+                  deletePostFn={ this.props.deletePostFn } />
           ))
         }
 

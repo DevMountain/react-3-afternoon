@@ -4,7 +4,32 @@ import ProfileIcon from 'react-icons/lib/md/person-outline';
 import './Compose.css';
 
 export default class Compose extends Component {
+  constructor() {
+    super();
+    
+    this.state = {
+      text: ''
+    }
+
+    this.createPost = this.createPost.bind( this );
+  }
+
+  updateText( text ) {
+    this.setState({ text });
+  }
+
+  createPost() {
+    const { text } = this.state;
+    const { createPostFn } = this.props;
+
+    createPostFn( text );
+
+    this.setState({ text: '' });
+  }
+
   render() {
+    const { text } = this.state;
+
     return (
       <section className="Compose__parent">
         <div className="Compose__top">
@@ -13,12 +38,15 @@ export default class Compose extends Component {
             <ProfileIcon />
           </div>
 
-          <input className="Compose__input" placeholder="What's on your mind?" />
+          <input className="Compose__input"
+                 placeholder="What's on your mind?"
+                 value={ text }
+                 onChange={ ( e ) => this.updateText( e.target.value ) } />
 
         </div>
 
         <div className="Compose__bottom">
-          <button>Compose</button>
+          <button onClick={ this.createPost }>Compose</button>
         </div>
       </section>
     )

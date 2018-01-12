@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 import './Edit.css';
 
@@ -44,7 +43,7 @@ export default class Edit extends Component {
 
           <button id="Edit__controsl-cancel"
                   className="Edit__control-btn"
-                  onClick={ this.props.hideEdit }>
+                  onClick={ hideEdit }>
             Cancel
           </button>
         </div>

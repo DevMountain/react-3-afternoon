@@ -44,6 +44,7 @@ export default class Post extends Component {
 
   render() {
     const { editing, showMasterMenu } = this.state;
+    const { id, text, date, updatePostFn, deletePostFn } = this.props;
 
     return (
       <section className="Post__parent" onClick={ this.hideMasterMenu }>
@@ -53,7 +54,7 @@ export default class Post extends Component {
 
           <div className="Post__master-menu" style={ { display: showMasterMenu ? 'flex' : 'none' } }>
             <span onClick={ this.showEdit }>Edit</span>
-            <span>Delete</span>
+            <span onClick={ () => deletePostFn( id ) }>Delete</span>
           </div>
         </div>
 
@@ -65,19 +66,19 @@ export default class Post extends Component {
           <span className="Post__name">DevMountain</span>
           <span className="Post__handle">@DevMountain</span>
 
-          <span className="Post__date">- { this.props.date }</span>
+          <span className="Post__date">- { date }</span>
         </div>
 
         <div className="Post__content">
           {
             editing
             ?
-              <Edit updatePostFn={ this.props.updatePostFn }
-                    id={ this.props.id }
-                    text={ this.props.text }
+              <Edit updatePostFn={ updatePostFn }
+                    id={ id }
+                    text={ text }
                     hideEdit={ this.hideEdit } />
             :
-              <span className="Post__text">{ this.props.text }</span>
+              <span className="Post__text">{ text }</span>
           }
         </div>
 
