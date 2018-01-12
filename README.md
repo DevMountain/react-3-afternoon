@@ -354,6 +354,32 @@ render() {
 
 </details>
 
+## Step 4
+
+### Summary
+
+In this step, we'll get the `Edit` button to work for existing `posts`. The edit button is under the hidden menu on the top-right of a `post`.
+
+### Instructions
+
+* Open `./src/components/Feed/Post/Post.js`.
+
+<details>
+
+<summary> Detailed Instructions </summary>
+
+<br />
+
+
+
+</details>
+
+### Solution
+
+
+
+
+
 
 
 
