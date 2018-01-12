@@ -18,7 +18,7 @@ export default class Post extends Component {
       showMasterMenu: false
     }
 
-    this.cancelEdit = this.cancelEdit.bind( this );
+    this.hideEdit = this.hideEdit.bind( this );
     this.showEdit = this.showEdit.bind( this );
     this.toggleMasterMenu = this.toggleMasterMenu.bind( this );
     this.hideMasterMenu = this.hideMasterMenu.bind( this );
@@ -28,7 +28,7 @@ export default class Post extends Component {
     this.setState({ editing: true, showMasterMenu: false });
   }
 
-  cancelEdit() {
+  hideEdit() {
     this.setState({ editing: false });
   }
 
@@ -72,8 +72,10 @@ export default class Post extends Component {
           {
             editing
             ?
-              <Edit text={ this.props.text }
-                    cancelFn={ this.cancelEdit } />
+              <Edit updatePostFn={ this.props.updatePostFn }
+                    id={ this.props.id }
+                    text={ this.props.text }
+                    hideFn={ this.hideEdit } />
             :
               <span className="Post__text">{ this.props.text }</span>
           }

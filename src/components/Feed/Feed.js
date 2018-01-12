@@ -16,7 +16,8 @@ export default class Feed extends Component {
             <Post key={ post.id }
                   text={ post.text }
                   date={ post.date }
-                  id={ post.id } />
+                  id={ post.id }
+                  updatePostFn={ this.props.updatePostFn } />
           ))
         }
 

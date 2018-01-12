@@ -21,6 +21,14 @@ class App extends Component {
     this.state = {
       posts: []
     }
+
+    this.updatePost = this.updatePost.bind( this );
+  }
+
+  updatePost( id, text ) {
+    axios.put(`https://practiceapi.devmountain.com/api/posts?id=${ id }`, { text }).then( results => {
+      this.setState({ posts: results.data });
+    });
   }
 
   render() {
@@ -32,7 +40,7 @@ class App extends Component {
 
         <section className="App__content">
           <Summary count={ posts.length } />
-          <Feed posts={ posts } />
+          <Feed posts={ posts } updatePostFn={ this.updatePost } />
         </section>
       </div>
     );

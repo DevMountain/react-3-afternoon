@@ -367,9 +367,11 @@ In this step, we'll get the `Edit` button to work for existing `posts`. The edit
 * Open `./src/components/Feed/Post/Post.js`.
 * Locate where the `Edit` component is being rendered.
 * Update the `text` prop to be the `post`'s text.
+* Create a new method called `updatePost` that has a single parameter called `value`.
 * Open `./src/components/Feed/Post/Edit/Edit.js`.
-
-
+* Import `axios` into the component.
+* Locate the `onUpdate` method. This method gets called when a user presses the `Update` button.
+* Use `axios` to send a `PUT` request to the API to update the `post`'s text.
 
 <details>
 
