@@ -365,6 +365,11 @@ In this step, we'll get the `Edit` button to work for existing `posts`. The edit
 ### Instructions
 
 * Open `./src/components/Feed/Post/Post.js`.
+* Locate where the `Edit` component is being rendered.
+* Update the `text` prop to be the `post`'s text.
+* Open `./src/components/Feed/Post/Edit/Edit.js`.
+
+
 
 <details>
 
@@ -378,7 +383,24 @@ In this step, we'll get the `Edit` button to work for existing `posts`. The edit
 
 ### Solution
 
+<details>
 
+<summary> <code> ./src/components/Feed/Post/Post.js ( Edit render ) </code> </summary>
+
+```js
+<div className="Post__content">
+  {
+    editing
+    ?
+      <Edit text={ this.props.text }
+            cancelFn={ this.cancelEdit } />
+    :
+      <span className="Post__text">{ this.props.text }</span>
+  }
+</div>
+```
+
+</details>
 
 
 
