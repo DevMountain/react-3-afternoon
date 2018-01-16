@@ -36,13 +36,13 @@ class App extends Component {
   deletePost( id ) {
     axios.delete(`https://practiceapi.devmountain.com/api/posts?id=${ id }`).then( results => {
       this.setState({ posts: results.data });
-    })
+    });
   }
 
   createPost( text ) {
     axios.post('https://practiceapi.devmountain.com/api/posts', { text }).then( results => {
       this.setState({ posts: results.data });
-    })
+    });
   }
 
   render() {
