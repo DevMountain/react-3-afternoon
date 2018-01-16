@@ -26,60 +26,6 @@ Before continuing to step 1, take a minute to browse the API documentation.
 
 https://swaggerhub.com/apis/DevMountain/social_mountain/1.0.0
 
-## Step 1
-
-### Summary
-
-In this step, we'll import axios into the project and fetch all the DevMountain posts. Remember to use the API documentation to help you complete the steps.
-
-### Instructions
-
-* Open `./src/components/App.js`.
-* Create a `componentDidMount` method that fetches all the posts using `axios`.
-* Use the result of the `axios` call to set a `posts` array on state.
-* Pass the posts array down as a `prop` into the `Feed` component.
-* Pass the posts array length down as a`prop` into the `Summary` component.
-
-<details>
-
-<summary> Detailed Instructions </summary>
-
-
-
-</details>
-
-### Solution
-
-<details>
-
-<summary> <code> ./src/components/App.js </code> </summary>
-
-```js
-
-```
-
-</details>
-
-<img src="https://github.com/DevMountain/react-3-afternoon/blob/solution/assets/1g.gif" />
-
-## Step 2
-
-### Summary
-
-In this step, we'll get the `Compose` button to create new DevMountain posts.
-
-## Step 3
-
-### Summary
-
-In this step, we'll get the `Edit` button to edit existing DevMountain posts.
-
-## Step 4
-
-### Summary
-
-In this step, we'll get the `Delete` button to delete existing DevMountain posts.
-
 ## Black Diamond
 
 Search functionality..

@@ -16,7 +16,7 @@ export default class Post extends Component {
     this.state = {
       editing: false,
       showMasterMenu: false
-    }
+    };
 
     this.hideEdit = this.hideEdit.bind( this );
     this.showEdit = this.showEdit.bind( this );
@@ -65,7 +65,7 @@ export default class Post extends Component {
           <span className="Post__name">DevMountain</span>
           <span className="Post__handle">@DevMountain</span>
 
-          <span className="Post__date">- DATE GOES HERE</span>
+          <span className="Post__date">- POST DATE GOES HERE</span>
         </div>
 
         <div className="Post__content">
