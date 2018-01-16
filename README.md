@@ -354,7 +354,7 @@ render() {
 
 </details>
 
-<img src="https://github.com/DevMountain/react-3-afternoon/blob/solution/assets/3.png" />
+<img src="https://github.com/DevMountain/react-3-afternoon/blob/solution/assets/1.png" />
 
 ## Step 4
 
