@@ -24,15 +24,15 @@ class App extends Component {
 
   }
 
-  updatePost( id, text ) {
+  updatePost() {
   
   }
 
-  deletePost( id ) {
+  deletePost() {
 
   }
 
-  createPost( text ) {
+  createPost() {
 
   }
 
