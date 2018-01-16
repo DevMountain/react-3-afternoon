@@ -4,16 +4,10 @@ import axios from 'axios';
 import './App.css';
 
 import Header from './Header/Header';
-import Summary from './Summary/Summary';
-import Feed from './Feed/Feed';
+import Compose from './Compose/Compose';
+import Post from './Post/Post';
 
 class App extends Component {
-  componentDidMount() {
-    axios.get('https://practiceapi.devmountain.com/api/posts').then( results => {
-      this.setState({ posts: results.data });
-    });
-  }
-
   constructor() {
     super();
 
@@ -24,6 +18,12 @@ class App extends Component {
     this.updatePost = this.updatePost.bind( this );
     this.deletePost = this.deletePost.bind( this );
     this.createPost = this.createPost.bind( this );
+  }
+  
+  componentDidMount() {
+    axios.get('https://practiceapi.devmountain.com/api/posts').then( results => {
+      this.setState({ posts: results.data });
+    });
   }
 
   updatePost( id, text ) {
@@ -53,12 +53,18 @@ class App extends Component {
 
         <section className="App__content">
 
-          <Summary count={ posts.length } />
-
-          <Feed posts={ posts }
-                updatePostFn={ this.updatePost }
-                deletePostFn={ this.deletePost }
-                createPostFn={ this.createPost } />
+          <Compose createPostFn={ this.createPost } />
+          
+          {
+            posts.map( post => (
+              <Post key={ post.id }
+                    id={ post.id }
+                    text={ post.text }
+                    date={ post.date }
+                    updatePostFn={ this.updatePost }
+                    deletePostFn={ this.deletePost } />
+            ))
+          }
 
         </section>
       </div>
