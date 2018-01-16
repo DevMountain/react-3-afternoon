@@ -52,5 +52,18 @@ module.exports = {
 
       res.status(200).send( posts );
     }
+  },
+
+  filter: ( req, res, next ) => {
+    if ( !req.body.text ) {
+      res.status(409).send('Request body is missing required text property.');
+    } else {
+      let { text } = req.body;
+      text = text.toLowerCase();
+
+      const filteredPosts = posts.filter( post => post.text.toLowerCase().includes( text ) );
+
+      res.status( 200 ).send( filteredPosts );
+    }
   }
 }
