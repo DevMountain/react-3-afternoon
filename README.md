@@ -10,7 +10,7 @@ This is a live API, please be respectful and mindful of what you post.
 
 <a href="https://devmountain.github.io/react-3-afternoon/">Click Me!</a>
 
-<img src="https://github.com/DevMountain/react-3-afternoon/blob/solution/assets/1.png" />
+<img src="https://github.com/DevMountain/react-3-afternoon/blob/solution/assets/1-1.png" />
 
 ## Setup
 
