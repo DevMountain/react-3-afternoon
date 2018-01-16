@@ -867,7 +867,7 @@ createPost() {
 
 ## Black Diamond
 
-Update the project to allow the `Search` bar to find `posts` that contain a certain string. Example: If a user searchs for blue, the Feed of posts should only display posts that contain the word blue.
+Update the project to allow the `Search` bar to find `posts` that contain a certain string. Example: If a user searchs for blue, the Feed of posts should only display posts that contain the word blue. To filter by multiple words be sure to use the `encodeURI` JavaScript function.
 
 ## Contributions
 
