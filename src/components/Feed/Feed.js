@@ -6,19 +6,21 @@ import './Feed.css';
 
 export default class Feed extends Component {
   render() {
+    const { posts, createPostFn, updatePostFn, deletePostFn } = this.props;
+    
     return (
       <section className="Feed__parent">
 
-        <Compose createPostFn={ this.props.createPostFn } />
+        <Compose createPostFn={ createPostFn } />
         
         {
-          this.props.posts.map( post => (
+          posts.map( post => (
             <Post key={ post.id }
                   text={ post.text }
                   date={ post.date }
                   id={ post.id }
-                  updatePostFn={ this.props.updatePostFn }
-                  deletePostFn={ this.props.deletePostFn } />
+                  updatePostFn={ updatePostFn }
+                  deletePostFn={ deletePostFn } />
           ))
         }
 

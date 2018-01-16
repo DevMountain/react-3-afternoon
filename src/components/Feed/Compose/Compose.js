@@ -9,7 +9,7 @@ export default class Compose extends Component {
     
     this.state = {
       text: ''
-    }
+    };
 
     this.createPost = this.createPost.bind( this );
   }

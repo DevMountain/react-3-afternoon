@@ -16,7 +16,7 @@ export default class Post extends Component {
     this.state = {
       editing: false,
       showMasterMenu: false
-    }
+    };
 
     this.hideEdit = this.hideEdit.bind( this );
     this.showEdit = this.showEdit.bind( this );

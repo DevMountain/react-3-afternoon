@@ -20,7 +20,7 @@ class App extends Component {
 
     this.state = {
       posts: []
-    }
+    };
 
     this.updatePost = this.updatePost.bind( this );
     this.deletePost = this.deletePost.bind( this );
