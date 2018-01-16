@@ -4,7 +4,6 @@ import './App.css';
 
 import Header from './Header/Header';
 import Compose from './Compose/Compose';
-import Post from './Post/Post';
 
 class App extends Component {
   constructor() {
