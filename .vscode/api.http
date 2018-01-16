@@ -16,9 +16,4 @@ content-type: application/json
 
 DELETE http://localhost:4000/api/posts?id=3
 
-GET http://localhost:4000/api/posts/filter
-content-type: application/json
-
-{
-  "text": "hi"
-}
+GET http://localhost:4000/api/posts/filter?text=meRry%20cHr
