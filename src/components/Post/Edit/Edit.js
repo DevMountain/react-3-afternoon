@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './Edit.css';
 
+//////////////////////////////////////////////////////// THIS COMPONENT IS BEING RENDERED IN THE *POST* COMPONENT
+
 export default class Edit extends Component {
   constructor( props ) {
     super( props );
