@@ -61,7 +61,7 @@ export default class Post extends Component {
         <div className="Post__master-controls">
           <MasterControlIcon onClick={ this.toggleMasterMenu } />
 
-          {/* Drop-down menu */}
+          {/* Drop-down menu. Remember that the "showMasterMenu" variable has been destructured off of this.state */}
           <div className="Post__master-menu" style={ { display: showMasterMenu ? 'flex' : 'none' } }>
             <span onClick={ this.showEdit }>Edit</span>
             <span>Delete</span>
@@ -80,10 +80,17 @@ export default class Post extends Component {
           <span className="Post__date">- POST DATE GOES HERE</span>
         </div>
 
-        {/* This is where the text goes. Notice the turnary statement.
-            The turnary statement decides to display either the text OR the editor view */}
+        {/* This is where the text goes. Notice the turnary statement. The turnary statement decides to display either the text OR the editor view
+            You can also think of it as being written as so:
+              if( this.state.editing === true ) {
+                <Edit ... />
+              } else {
+                <span ... ></span>
+              }
+        */}
         <div className="Post__content">
           {
+            // This has been pulled off of this.state via destructuring
             editing
             ?
               <Edit text=""
