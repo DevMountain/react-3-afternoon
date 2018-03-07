@@ -49,8 +49,8 @@ export default class Post extends Component {
 
   render() {
     // This is destructuring! You can also think of it as being written as so:
-      // let editing = this.state.editing
-      // let showMasterMenu = this.state.showMasterMenu
+      // const editing = this.state.editing
+      // const showMasterMenu = this.state.showMasterMenu
     const { editing, showMasterMenu } = this.state;
 
     return (
