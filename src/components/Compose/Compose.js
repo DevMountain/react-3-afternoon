@@ -23,6 +23,7 @@ export default class Compose extends Component {
   }
 
   render() {
+    // Destructuring
     const { text } = this.state;
 
     return (
@@ -33,6 +34,7 @@ export default class Compose extends Component {
             <ProfileIcon />
           </div>
 
+          {/* This is where you type the message for your new post */}
           <input className="Compose__input"
                  placeholder="What's on your mind?"
                  value={ text }
