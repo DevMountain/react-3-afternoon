@@ -34,7 +34,7 @@ In this step, we'll use `axios` to fetch `posts` from the API and render them on
 
 ### Instructions
 
-* Add `axios` to the project using `npm install --save axios`.
+* Add `axios` to the project using `npm install axios`.
 * Open `./src/components/App.js`.
 * Import `axios` into the component.
 * Use `axios` and the API documentation to fetch `posts` in the `componentDidMount` method.
@@ -49,7 +49,7 @@ In this step, we'll use `axios` to fetch `posts` from the API and render them on
 
 <br />
 
-Let's begin by opening a terminal and `cd` into the root of the project. We'll need to add `axios` to our project in order to make API requests. We can do so by running `npm install --save axios`.
+Let's begin by opening a terminal and `cd` into the root of the project. We'll need to add `axios` to our project in order to make API requests. We can do so by running `npm install axios`.
 
 Now let's open `./src/components/App.js` and import `axios` into the component. Near the top of the file with the other import statements, add the following code:
 
@@ -868,6 +868,27 @@ createPost() {
 ## Black Diamond
 
 Update the project to allow the `Search` bar to find `posts` that contain a certain string. Example: If a user searchs for blue, the Feed of posts should only display posts that contain the word blue. To filter by multiple words be sure to use the `encodeURI` JavaScript function.
+
+## Resources
+
+
+<details>
+
+<summary> <code> Axios </code> </summary>
+
+* [Axios Docs](https://github.com/axios/axios)
+
+</details>
+
+<details>
+
+<summary> <code> Props </code> </summary>
+
+* [React Props](https://www.robinwieruch.de/react-pass-props-to-component/#react-props)
+
+</details>
+
+
 
 ## Contributions
 
